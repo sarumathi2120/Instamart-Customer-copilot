@@ -1,0 +1,150 @@
+{
+  "rfm_count": 1175,
+  "rfm_median_recency": 19.0,
+  "rfm_mean_frequency": 9.45531914893617,
+  "rfm_mean_monetary": 2552.0585531914894,
+  "k_selected": 4,
+  "premium_segment_id": 1,
+  "pca_variance_ratio": [
+    0.6342787496047422,
+    0.21803761714547434
+  ],
+  "cohort": 1156,
+  "lapsed": 443,
+  "train": 924,
+  "test": 232,
+  "training_scaler_frequency_mean": 8.114718614718615,
+  "cohort_frequency_mean": 8.028546712802768,
+  "baseline": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "accuracy": 0.6164,
+    "confusion_matrix": [
+      [
+        143,
+        0
+      ],
+      [
+        89,
+        0
+      ]
+    ]
+  },
+  "logistic_best_params": {
+    "model__C": 100
+  },
+  "logistic_cv_f1": 0.650552962900789,
+  "logistic_test": {
+    "precision": 0.6444,
+    "recall": 0.6517,
+    "f1": 0.648,
+    "accuracy": 0.7284,
+    "confusion_matrix": [
+      [
+        111,
+        32
+      ],
+      [
+        31,
+        58
+      ]
+    ]
+  },
+  "forest_best_params": {
+    "model__max_depth": 5,
+    "model__min_samples_leaf": 10
+  },
+  "forest_cv_f1": 0.6835418767253826,
+  "forest_test": {
+    "precision": 0.6304,
+    "recall": 0.6517,
+    "f1": 0.6409,
+    "accuracy": 0.7198,
+    "confusion_matrix": [
+      [
+        109,
+        34
+      ],
+      [
+        31,
+        58
+      ]
+    ]
+  },
+  "balanced_logistic_test": {
+    "precision": 0.5891,
+    "recall": 0.8539,
+    "f1": 0.6972,
+    "accuracy": 0.7155,
+    "confusion_matrix": [
+      [
+        90,
+        53
+      ],
+      [
+        13,
+        76
+      ]
+    ]
+  },
+  "selected_model": "Logistic Regression",
+  "retention_true_lapsed": 3,
+  "retention_count": 10,
+  "top_importance": [
+    {
+      "feature": "numeric__frequency",
+      "importance": 0.3533415084104953
+    },
+    {
+      "feature": "numeric__monetary",
+      "importance": 0.22792126836221718
+    },
+    {
+      "feature": "numeric__recency",
+      "importance": 0.09728820845195699
+    },
+    {
+      "feature": "numeric__cancellation_rate",
+      "importance": 0.09514253032252556
+    },
+    {
+      "feature": "numeric__avg_discount",
+      "importance": 0.050775505045671424
+    }
+  ],
+  "logistic_coefficients": [
+    {
+      "feature": "numeric__frequency",
+      "coefficient": -1.6982389203159147
+    },
+    {
+      "feature": "categorical__favourite_category_Electronics",
+      "coefficient": -1.1367129072337334
+    },
+    {
+      "feature": "categorical__favourite_category_Grocery",
+      "coefficient": -0.44867271537696946
+    },
+    {
+      "feature": "categorical__city_Delhi",
+      "coefficient": -0.3745171940571496
+    },
+    {
+      "feature": "numeric__monetary",
+      "coefficient": 0.28457332751941944
+    },
+    {
+      "feature": "categorical__favourite_category_Personal Care",
+      "coefficient": -0.2840446845359463
+    },
+    {
+      "feature": "categorical__favourite_category_Snacks",
+      "coefficient": -0.27918653182781966
+    },
+    {
+      "feature": "categorical__city_Mumbai",
+      "coefficient": -0.23029004730615443
+    }
+  ]
+}
